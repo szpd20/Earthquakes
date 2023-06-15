@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9933869c564c7ccf59b134a683b6e1be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 50px; right: 50px; z-index: 1000; font-size: 14px;">
+    <p><strong>Legend</strong></p>
+    <p><i class="fa fa-map-marker fa-1x" style="color: blue;"></i>Epicenters of earthquakes</p>
+    </div>
+    
+            <div class="folium-map" id="map_9933869c564c7ccf59b134a683b6e1be" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9933869c564c7ccf59b134a683b6e1be = L.map(
+                "map_9933869c564c7ccf59b134a683b6e1be",
+                {
+                    center: [49.0, 31.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_9933869c564c7ccf59b134a683b6e1be);
+
+            
+
+        
+    
+            var marker_c9ee07654df33dbbb5bc326e812e3a64 = L.marker(
+                [48.323, 23.278],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_c023f728483be3a907b321ffb35306dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c9ee07654df33dbbb5bc326e812e3a64.setIcon(icon_c023f728483be3a907b321ffb35306dc);
+        
+    
+        var popup_6c84c5766564d7c975031ba19053223c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85c5dd3e04dc3da3bc13db434bb16b31 = $(`<div id="html_85c5dd3e04dc3da3bc13db434bb16b31" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_6c84c5766564d7c975031ba19053223c.setContent(html_85c5dd3e04dc3da3bc13db434bb16b31);
+            
+        
+
+        marker_c9ee07654df33dbbb5bc326e812e3a64.bindPopup(popup_6c84c5766564d7c975031ba19053223c)
+        ;
+
+        
+    
+    
+            var marker_891e3a3d408ac06b036c5a824b5688d1 = L.marker(
+                [48.3744, 23.2111],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_5de1618504417093443dad25b13f1759 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_891e3a3d408ac06b036c5a824b5688d1.setIcon(icon_5de1618504417093443dad25b13f1759);
+        
+    
+        var popup_b5a473fa16f5b32d1506a8b0ca6766a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f6415ba87e306d25b94ecb237315d8e = $(`<div id="html_2f6415ba87e306d25b94ecb237315d8e" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_b5a473fa16f5b32d1506a8b0ca6766a3.setContent(html_2f6415ba87e306d25b94ecb237315d8e);
+            
+        
+
+        marker_891e3a3d408ac06b036c5a824b5688d1.bindPopup(popup_b5a473fa16f5b32d1506a8b0ca6766a3)
+        ;
+
+        
+    
+    
+            var marker_d2c3bc26d83b53455c91d5e300441667 = L.marker(
+                [48.351, 23.254],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_4a315b46cbde7a28d47c607357a1c0c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d2c3bc26d83b53455c91d5e300441667.setIcon(icon_4a315b46cbde7a28d47c607357a1c0c9);
+        
+    
+        var popup_9ebb57003fef2855fcd057e651442e4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bddd1effebb6a71a991e2891dfa1da4c = $(`<div id="html_bddd1effebb6a71a991e2891dfa1da4c" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_9ebb57003fef2855fcd057e651442e4d.setContent(html_bddd1effebb6a71a991e2891dfa1da4c);
+            
+        
+
+        marker_d2c3bc26d83b53455c91d5e300441667.bindPopup(popup_9ebb57003fef2855fcd057e651442e4d)
+        ;
+
+        
+    
+    
+            var marker_a5882b24dead8eb16ce82fa6ea9086c2 = L.marker(
+                [48.354, 23.244],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_9c81170433d678f60998e077e855bf32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a5882b24dead8eb16ce82fa6ea9086c2.setIcon(icon_9c81170433d678f60998e077e855bf32);
+        
+    
+        var popup_7c8417e51facb9e05829282c8c1c688e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f65ec4b40762151e8c829418b7b51bc1 = $(`<div id="html_f65ec4b40762151e8c829418b7b51bc1" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_7c8417e51facb9e05829282c8c1c688e.setContent(html_f65ec4b40762151e8c829418b7b51bc1);
+            
+        
+
+        marker_a5882b24dead8eb16ce82fa6ea9086c2.bindPopup(popup_7c8417e51facb9e05829282c8c1c688e)
+        ;
+
+        
+    
+    
+            var marker_1e3b882107dfb2fdccaf1366a38a3d09 = L.marker(
+                [47.4462, 24.7246],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_af7a3da18bed14c2f7e64fd5e11bb79e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1e3b882107dfb2fdccaf1366a38a3d09.setIcon(icon_af7a3da18bed14c2f7e64fd5e11bb79e);
+        
+    
+        var popup_82f99e40165a17c005e42fdccfe38779 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8c5467dc2e2c8ba57707ff5e16b6a0a = $(`<div id="html_a8c5467dc2e2c8ba57707ff5e16b6a0a" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_82f99e40165a17c005e42fdccfe38779.setContent(html_a8c5467dc2e2c8ba57707ff5e16b6a0a);
+            
+        
+
+        marker_1e3b882107dfb2fdccaf1366a38a3d09.bindPopup(popup_82f99e40165a17c005e42fdccfe38779)
+        ;
+
+        
+    
+    
+            var marker_6d57fbcbf0f262921485839c4583272a = L.marker(
+                [48.65, 24.41],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_1d83e812c66a37f35e77e61d541c1885 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6d57fbcbf0f262921485839c4583272a.setIcon(icon_1d83e812c66a37f35e77e61d541c1885);
+        
+    
+        var popup_ce820cc6bd36a02e6a1e198a62392e83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2e2997670e6a4d853c8356add5e3f1c = $(`<div id="html_a2e2997670e6a4d853c8356add5e3f1c" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_ce820cc6bd36a02e6a1e198a62392e83.setContent(html_a2e2997670e6a4d853c8356add5e3f1c);
+            
+        
+
+        marker_6d57fbcbf0f262921485839c4583272a.bindPopup(popup_ce820cc6bd36a02e6a1e198a62392e83)
+        ;
+
+        
+    
+    
+            var marker_994eb60edd913ea331e689dc748d2d68 = L.marker(
+                [47.868, 23.108],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_c6e5cca1a619f9ca1da4c8798bd50c8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_994eb60edd913ea331e689dc748d2d68.setIcon(icon_c6e5cca1a619f9ca1da4c8798bd50c8b);
+        
+    
+        var popup_a1a639fc2b2cff47b947486db6638d4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_145007fe9d66919e06d0aafc52440e4a = $(`<div id="html_145007fe9d66919e06d0aafc52440e4a" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_a1a639fc2b2cff47b947486db6638d4a.setContent(html_145007fe9d66919e06d0aafc52440e4a);
+            
+        
+
+        marker_994eb60edd913ea331e689dc748d2d68.bindPopup(popup_a1a639fc2b2cff47b947486db6638d4a)
+        ;
+
+        
+    
+    
+            var marker_647f1e79ec5ff3de534c91bae791c745 = L.marker(
+                [48.82, 21.72],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_f4621bc47c94a8ab37a99e8fb10a9406 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_647f1e79ec5ff3de534c91bae791c745.setIcon(icon_f4621bc47c94a8ab37a99e8fb10a9406);
+        
+    
+        var popup_05c8cd1a6f66d02e614152788628a6b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f83b6fefe4c0c4468e0521418c70f53 = $(`<div id="html_1f83b6fefe4c0c4468e0521418c70f53" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_05c8cd1a6f66d02e614152788628a6b5.setContent(html_1f83b6fefe4c0c4468e0521418c70f53);
+            
+        
+
+        marker_647f1e79ec5ff3de534c91bae791c745.bindPopup(popup_05c8cd1a6f66d02e614152788628a6b5)
+        ;
+
+        
+    
+    
+            var marker_23052e91b98583a7b101b853d3601533 = L.marker(
+                [48.187, 22.188],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_675302c4118ff9397b3c11d9bcfa8c92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_23052e91b98583a7b101b853d3601533.setIcon(icon_675302c4118ff9397b3c11d9bcfa8c92);
+        
+    
+        var popup_37ec9aeaa56a8bb1ccbb096182c29d0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb1ff98dd2e8fd049c36b9050de29d6b = $(`<div id="html_fb1ff98dd2e8fd049c36b9050de29d6b" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_37ec9aeaa56a8bb1ccbb096182c29d0f.setContent(html_fb1ff98dd2e8fd049c36b9050de29d6b);
+            
+        
+
+        marker_23052e91b98583a7b101b853d3601533.bindPopup(popup_37ec9aeaa56a8bb1ccbb096182c29d0f)
+        ;
+
+        
+    
+    
+            var marker_0391d8fad093ad383c175ac43a485cef = L.marker(
+                [49.377, 21.145],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_53d4abb460462f4bbf66020a8bf9fd59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0391d8fad093ad383c175ac43a485cef.setIcon(icon_53d4abb460462f4bbf66020a8bf9fd59);
+        
+    
+        var popup_3152a1d3878c17666e73c45e1d6533f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07d6dcd9627798bd02c52838463fed6c = $(`<div id="html_07d6dcd9627798bd02c52838463fed6c" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_3152a1d3878c17666e73c45e1d6533f9.setContent(html_07d6dcd9627798bd02c52838463fed6c);
+            
+        
+
+        marker_0391d8fad093ad383c175ac43a485cef.bindPopup(popup_3152a1d3878c17666e73c45e1d6533f9)
+        ;
+
+        
+    
+    
+            var marker_92ad52ee7944d060a96a068bcff73c25 = L.marker(
+                [48.47, 24.46],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_642628d2a8c5c89ae388abdfc7abde6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_92ad52ee7944d060a96a068bcff73c25.setIcon(icon_642628d2a8c5c89ae388abdfc7abde6e);
+        
+    
+        var popup_ab2e5ae133fb529fcf419e582ef0bfa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f9dc5f6db1338ccdb1d50fdb2260db7 = $(`<div id="html_5f9dc5f6db1338ccdb1d50fdb2260db7" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_ab2e5ae133fb529fcf419e582ef0bfa6.setContent(html_5f9dc5f6db1338ccdb1d50fdb2260db7);
+            
+        
+
+        marker_92ad52ee7944d060a96a068bcff73c25.bindPopup(popup_ab2e5ae133fb529fcf419e582ef0bfa6)
+        ;
+
+        
+    
+    
+            var marker_32d96da44a3314b918d1c6af9e01b2d4 = L.marker(
+                [48.58, 24.58],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_beab64b685e7c2b7b30eec5e056ea340 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_32d96da44a3314b918d1c6af9e01b2d4.setIcon(icon_beab64b685e7c2b7b30eec5e056ea340);
+        
+    
+        var popup_3cb38f3d3063bca1ae569b4edf568929 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df9437a57775336c660934c1762dcf94 = $(`<div id="html_df9437a57775336c660934c1762dcf94" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_3cb38f3d3063bca1ae569b4edf568929.setContent(html_df9437a57775336c660934c1762dcf94);
+            
+        
+
+        marker_32d96da44a3314b918d1c6af9e01b2d4.bindPopup(popup_3cb38f3d3063bca1ae569b4edf568929)
+        ;
+
+        
+    
+    
+            var marker_27e743896ab546f93a4896749649941f = L.marker(
+                [47.989, 23.764],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_bfc6bea83182b71befab4ec170c19443 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_27e743896ab546f93a4896749649941f.setIcon(icon_bfc6bea83182b71befab4ec170c19443);
+        
+    
+        var popup_010240d08df45cdda8dccce5dbe697c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0133220fb4b5104d2d27595632402cb2 = $(`<div id="html_0133220fb4b5104d2d27595632402cb2" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_010240d08df45cdda8dccce5dbe697c9.setContent(html_0133220fb4b5104d2d27595632402cb2);
+            
+        
+
+        marker_27e743896ab546f93a4896749649941f.bindPopup(popup_010240d08df45cdda8dccce5dbe697c9)
+        ;
+
+        
+    
+    
+            var marker_187f96e9ac4b5e88bd4662be272ea8ec = L.marker(
+                [47.901, 22.624],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_e5b0bd3e6e746fdad0e9dad996b9a362 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_187f96e9ac4b5e88bd4662be272ea8ec.setIcon(icon_e5b0bd3e6e746fdad0e9dad996b9a362);
+        
+    
+        var popup_b30c78f2cf1075f5c1e0ee584ea7b8a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2e430ec3052188f60f7ff207cdec6dd = $(`<div id="html_e2e430ec3052188f60f7ff207cdec6dd" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_b30c78f2cf1075f5c1e0ee584ea7b8a7.setContent(html_e2e430ec3052188f60f7ff207cdec6dd);
+            
+        
+
+        marker_187f96e9ac4b5e88bd4662be272ea8ec.bindPopup(popup_b30c78f2cf1075f5c1e0ee584ea7b8a7)
+        ;
+
+        
+    
+    
+            var marker_362b64e0ba295a742e1dbc430eb11f22 = L.marker(
+                [49.104, 21.524],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_6c6cf97867c3eae46c9a3a7a13907ea5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_362b64e0ba295a742e1dbc430eb11f22.setIcon(icon_6c6cf97867c3eae46c9a3a7a13907ea5);
+        
+    
+        var popup_1e3a77974cc7bec196d0d2fb4c86843f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21bcf6abb9e4c3f81fdf93094700ab1f = $(`<div id="html_21bcf6abb9e4c3f81fdf93094700ab1f" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_1e3a77974cc7bec196d0d2fb4c86843f.setContent(html_21bcf6abb9e4c3f81fdf93094700ab1f);
+            
+        
+
+        marker_362b64e0ba295a742e1dbc430eb11f22.bindPopup(popup_1e3a77974cc7bec196d0d2fb4c86843f)
+        ;
+
+        
+    
+    
+            var marker_da4c395f4c3273f4eeaa8b41abb88f06 = L.marker(
+                [48.956, 22.282],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_601d89585506d01563c1b4c2bfb0bb9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_da4c395f4c3273f4eeaa8b41abb88f06.setIcon(icon_601d89585506d01563c1b4c2bfb0bb9b);
+        
+    
+        var popup_b42489a26ece0eb12f72e543ce0f1a95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86a34a9ef5a5a77e83d5222e27f89e73 = $(`<div id="html_86a34a9ef5a5a77e83d5222e27f89e73" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_b42489a26ece0eb12f72e543ce0f1a95.setContent(html_86a34a9ef5a5a77e83d5222e27f89e73);
+            
+        
+
+        marker_da4c395f4c3273f4eeaa8b41abb88f06.bindPopup(popup_b42489a26ece0eb12f72e543ce0f1a95)
+        ;
+
+        
+    
+    
+            var marker_d8b1f3a7b15d1df787604fa6442c77ec = L.marker(
+                [48.122, 21.955],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_8ed4c11772a44568783bea4463891388 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d8b1f3a7b15d1df787604fa6442c77ec.setIcon(icon_8ed4c11772a44568783bea4463891388);
+        
+    
+        var popup_3a5b003f48d250cabaa424a10947061e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39d13d9e45f2c0d426f2c5820f8af908 = $(`<div id="html_39d13d9e45f2c0d426f2c5820f8af908" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_3a5b003f48d250cabaa424a10947061e.setContent(html_39d13d9e45f2c0d426f2c5820f8af908);
+            
+        
+
+        marker_d8b1f3a7b15d1df787604fa6442c77ec.bindPopup(popup_3a5b003f48d250cabaa424a10947061e)
+        ;
+
+        
+    
+    
+            var marker_29a798deff1e822d26349c4180ec9db3 = L.marker(
+                [49.092, 23.45],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_391dfa9f48ce1bc184afb44730fc1652 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_29a798deff1e822d26349c4180ec9db3.setIcon(icon_391dfa9f48ce1bc184afb44730fc1652);
+        
+    
+        var popup_283bd9bc5568f3264cd2bbd0e26a326a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c7e406be6740f96c3d0ec33b8b72853 = $(`<div id="html_3c7e406be6740f96c3d0ec33b8b72853" style="width: 100.0%; height: 100.0%;">Lviv</div>`)[0];
+                popup_283bd9bc5568f3264cd2bbd0e26a326a.setContent(html_3c7e406be6740f96c3d0ec33b8b72853);
+            
+        
+
+        marker_29a798deff1e822d26349c4180ec9db3.bindPopup(popup_283bd9bc5568f3264cd2bbd0e26a326a)
+        ;
+
+        
+    
+    
+            var marker_4694b18df9a32fe3d23098a232379689 = L.marker(
+                [48.13, 23.52],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_0311fa52219b038f418a774ac4b26a3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4694b18df9a32fe3d23098a232379689.setIcon(icon_0311fa52219b038f418a774ac4b26a3a);
+        
+    
+        var popup_521e25b65b231683bd40c83ec2ea840d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6db35cc6fc472a7498d6bf77819eca77 = $(`<div id="html_6db35cc6fc472a7498d6bf77819eca77" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_521e25b65b231683bd40c83ec2ea840d.setContent(html_6db35cc6fc472a7498d6bf77819eca77);
+            
+        
+
+        marker_4694b18df9a32fe3d23098a232379689.bindPopup(popup_521e25b65b231683bd40c83ec2ea840d)
+        ;
+
+        
+    
+    
+            var marker_d721f3f618263562714214882a4522c4 = L.marker(
+                [49.09, 24.03],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_2046435e1f3e10b5d1f3d8b73693f9f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d721f3f618263562714214882a4522c4.setIcon(icon_2046435e1f3e10b5d1f3d8b73693f9f2);
+        
+    
+        var popup_bcf7d9ef72af8a0369c1034de6bf5c0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b75e7692e95de3603407e4ebd3c4b8eb = $(`<div id="html_b75e7692e95de3603407e4ebd3c4b8eb" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_bcf7d9ef72af8a0369c1034de6bf5c0f.setContent(html_b75e7692e95de3603407e4ebd3c4b8eb);
+            
+        
+
+        marker_d721f3f618263562714214882a4522c4.bindPopup(popup_bcf7d9ef72af8a0369c1034de6bf5c0f)
+        ;
+
+        
+    
+    
+            var marker_b9c7581224455001115fe288376b805e = L.marker(
+                [48.56, 27.38],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_5b6e834a356b73c0e56bf2d90444966f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b9c7581224455001115fe288376b805e.setIcon(icon_5b6e834a356b73c0e56bf2d90444966f);
+        
+    
+        var popup_c7e635b609dfca20f88ff4874ea04835 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7dd0c123f26c6e70c11164c4db44180 = $(`<div id="html_d7dd0c123f26c6e70c11164c4db44180" style="width: 100.0%; height: 100.0%;">Chernivtsi</div>`)[0];
+                popup_c7e635b609dfca20f88ff4874ea04835.setContent(html_d7dd0c123f26c6e70c11164c4db44180);
+            
+        
+
+        marker_b9c7581224455001115fe288376b805e.bindPopup(popup_c7e635b609dfca20f88ff4874ea04835)
+        ;
+
+        
+    
+    
+            var marker_c202af0a3206c991f91502e5c7b0f880 = L.marker(
+                [48.5, 27.35],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_631f91cadf7387c06b9cc3dcee03fbe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c202af0a3206c991f91502e5c7b0f880.setIcon(icon_631f91cadf7387c06b9cc3dcee03fbe9);
+        
+    
+        var popup_00ae8f75f04f21ef0d57d035d48bb834 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c15a315a25093f88086cd37d3157b3a9 = $(`<div id="html_c15a315a25093f88086cd37d3157b3a9" style="width: 100.0%; height: 100.0%;">Chernivtsi</div>`)[0];
+                popup_00ae8f75f04f21ef0d57d035d48bb834.setContent(html_c15a315a25093f88086cd37d3157b3a9);
+            
+        
+
+        marker_c202af0a3206c991f91502e5c7b0f880.bindPopup(popup_00ae8f75f04f21ef0d57d035d48bb834)
+        ;
+
+        
+    
+    
+            var marker_bb7b287285ba42be66579397ad8aadc8 = L.marker(
+                [48.65, 24.41],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_2bcc13858e6704816fe78e274df8eb2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bb7b287285ba42be66579397ad8aadc8.setIcon(icon_2bcc13858e6704816fe78e274df8eb2b);
+        
+    
+        var popup_1a6d2dc29eec3da86878c642248ce3b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab5e9df27450b75c414139f2c29ef253 = $(`<div id="html_ab5e9df27450b75c414139f2c29ef253" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_1a6d2dc29eec3da86878c642248ce3b5.setContent(html_ab5e9df27450b75c414139f2c29ef253);
+            
+        
+
+        marker_bb7b287285ba42be66579397ad8aadc8.bindPopup(popup_1a6d2dc29eec3da86878c642248ce3b5)
+        ;
+
+        
+    
+    
+            var marker_7ad4b953d4dcfcf943d3c98e484bab80 = L.marker(
+                [48.47, 24.46],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_676fe4157bf46a2a59c0fc8b120b466a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7ad4b953d4dcfcf943d3c98e484bab80.setIcon(icon_676fe4157bf46a2a59c0fc8b120b466a);
+        
+    
+        var popup_51c3839b90461cb1720c19cf3f0f4fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e5b9d6389e56af0b22fa257b1e29e64 = $(`<div id="html_2e5b9d6389e56af0b22fa257b1e29e64" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_51c3839b90461cb1720c19cf3f0f4fd9.setContent(html_2e5b9d6389e56af0b22fa257b1e29e64);
+            
+        
+
+        marker_7ad4b953d4dcfcf943d3c98e484bab80.bindPopup(popup_51c3839b90461cb1720c19cf3f0f4fd9)
+        ;
+
+        
+    
+    
+            var marker_591d503e9e28099feb948760d4da951e = L.marker(
+                [48.58, 24.58],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_d66e897a873cc520abf4f850913a5ad1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_591d503e9e28099feb948760d4da951e.setIcon(icon_d66e897a873cc520abf4f850913a5ad1);
+        
+    
+        var popup_10144cac5dd71953a52e8998e5026798 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef7a59ee2a8bf5829abe996f80113f99 = $(`<div id="html_ef7a59ee2a8bf5829abe996f80113f99" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_10144cac5dd71953a52e8998e5026798.setContent(html_ef7a59ee2a8bf5829abe996f80113f99);
+            
+        
+
+        marker_591d503e9e28099feb948760d4da951e.bindPopup(popup_10144cac5dd71953a52e8998e5026798)
+        ;
+
+        
+    
+    
+            var marker_080d3f39dadc039be533364b6c6f1a67 = L.marker(
+                [49.09, 24.03],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_b7a7d69be42471ae63b50e13b08689a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_080d3f39dadc039be533364b6c6f1a67.setIcon(icon_b7a7d69be42471ae63b50e13b08689a2);
+        
+    
+        var popup_462546a7a02fc163862d8cc3d898444d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9670f5dd6f9227fed63e11214020512f = $(`<div id="html_9670f5dd6f9227fed63e11214020512f" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_462546a7a02fc163862d8cc3d898444d.setContent(html_9670f5dd6f9227fed63e11214020512f);
+            
+        
+
+        marker_080d3f39dadc039be533364b6c6f1a67.bindPopup(popup_462546a7a02fc163862d8cc3d898444d)
+        ;
+
+        
+    
+    
+            var marker_f433a832107912949ef7d237b1473b3c = L.marker(
+                [48.59, 24.51],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_8fe4c54d6f36c555cedc3d4d74427cbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f433a832107912949ef7d237b1473b3c.setIcon(icon_8fe4c54d6f36c555cedc3d4d74427cbd);
+        
+    
+        var popup_0d90a98fdbf171c7698a07c1dbbaf956 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1efeac01b75d5f43be2cb08a4fc8789 = $(`<div id="html_f1efeac01b75d5f43be2cb08a4fc8789" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_0d90a98fdbf171c7698a07c1dbbaf956.setContent(html_f1efeac01b75d5f43be2cb08a4fc8789);
+            
+        
+
+        marker_f433a832107912949ef7d237b1473b3c.bindPopup(popup_0d90a98fdbf171c7698a07c1dbbaf956)
+        ;
+
+        
+    
+    
+            var marker_804b1ed1aae9ae5f2ef3ce7e53bec734 = L.marker(
+                [48.52, 27.35],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_781b31751e689ab8b49f88266721fcb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_804b1ed1aae9ae5f2ef3ce7e53bec734.setIcon(icon_781b31751e689ab8b49f88266721fcb3);
+        
+    
+        var popup_58f3160a74e698adf1d479597d9583b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cba491c01cb59c55219a665b90f215e8 = $(`<div id="html_cba491c01cb59c55219a665b90f215e8" style="width: 100.0%; height: 100.0%;">Chernivtsi</div>`)[0];
+                popup_58f3160a74e698adf1d479597d9583b7.setContent(html_cba491c01cb59c55219a665b90f215e8);
+            
+        
+
+        marker_804b1ed1aae9ae5f2ef3ce7e53bec734.bindPopup(popup_58f3160a74e698adf1d479597d9583b7)
+        ;
+
+        
+    
+    
+            var marker_2c825904671d7c6daf6a7d695f8d63fc = L.marker(
+                [48.61, 24.48],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_773237695b35a557ef0fd101d759d999 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2c825904671d7c6daf6a7d695f8d63fc.setIcon(icon_773237695b35a557ef0fd101d759d999);
+        
+    
+        var popup_eb5f0f76a6c32d3f57e2ee6f78453682 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53f0e6ad06167e7f3fca53fc4426936c = $(`<div id="html_53f0e6ad06167e7f3fca53fc4426936c" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_eb5f0f76a6c32d3f57e2ee6f78453682.setContent(html_53f0e6ad06167e7f3fca53fc4426936c);
+            
+        
+
+        marker_2c825904671d7c6daf6a7d695f8d63fc.bindPopup(popup_eb5f0f76a6c32d3f57e2ee6f78453682)
+        ;
+
+        
+    
+    
+            var marker_fde75a84d1136f3eb4358b6dc291ddc1 = L.marker(
+                [48.51, 24.49],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_8ea1bc129dffdc25541588c58105e4c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fde75a84d1136f3eb4358b6dc291ddc1.setIcon(icon_8ea1bc129dffdc25541588c58105e4c6);
+        
+    
+        var popup_65875b9a8c57110199bbe8fb956933ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5e03689deadc1fdbe97270360109717 = $(`<div id="html_b5e03689deadc1fdbe97270360109717" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_65875b9a8c57110199bbe8fb956933ab.setContent(html_b5e03689deadc1fdbe97270360109717);
+            
+        
+
+        marker_fde75a84d1136f3eb4358b6dc291ddc1.bindPopup(popup_65875b9a8c57110199bbe8fb956933ab)
+        ;
+
+        
+    
+    
+            var marker_9d71d724390153c67074dda41cbb5ca5 = L.marker(
+                [48.64, 24.5],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_6e5f19daa0d4fb243d2af5e8bd7bbba3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9d71d724390153c67074dda41cbb5ca5.setIcon(icon_6e5f19daa0d4fb243d2af5e8bd7bbba3);
+        
+    
+        var popup_69cd6ab1931098ff90d94b0390b71d0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8dbf2028d294d9b7183a331025c4a24 = $(`<div id="html_c8dbf2028d294d9b7183a331025c4a24" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_69cd6ab1931098ff90d94b0390b71d0b.setContent(html_c8dbf2028d294d9b7183a331025c4a24);
+            
+        
+
+        marker_9d71d724390153c67074dda41cbb5ca5.bindPopup(popup_69cd6ab1931098ff90d94b0390b71d0b)
+        ;
+
+        
+    
+    
+            var marker_6640f4d6aeed5aca26efc373ef1d625e = L.marker(
+                [48.29, 25.42],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_1c7e44881278c6ec372f8463b2f2f9f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6640f4d6aeed5aca26efc373ef1d625e.setIcon(icon_1c7e44881278c6ec372f8463b2f2f9f5);
+        
+    
+        var popup_1bad7359d452e29450384a650712bb99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_993dae3148a5cca51e9a3b598bd185d0 = $(`<div id="html_993dae3148a5cca51e9a3b598bd185d0" style="width: 100.0%; height: 100.0%;">Chernivtsi</div>`)[0];
+                popup_1bad7359d452e29450384a650712bb99.setContent(html_993dae3148a5cca51e9a3b598bd185d0);
+            
+        
+
+        marker_6640f4d6aeed5aca26efc373ef1d625e.bindPopup(popup_1bad7359d452e29450384a650712bb99)
+        ;
+
+        
+    
+    
+            var marker_e9cef72fb4afbecbda4ae2edf91cc3ff = L.marker(
+                [48.55, 24.47],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_c308de3d85672d96e6c05e045cef3fc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e9cef72fb4afbecbda4ae2edf91cc3ff.setIcon(icon_c308de3d85672d96e6c05e045cef3fc8);
+        
+    
+        var popup_06c057f47a7a1ba3322b6ab26d1dff3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f9181e9eb2e50fd71007ee12c57486a = $(`<div id="html_8f9181e9eb2e50fd71007ee12c57486a" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_06c057f47a7a1ba3322b6ab26d1dff3d.setContent(html_8f9181e9eb2e50fd71007ee12c57486a);
+            
+        
+
+        marker_e9cef72fb4afbecbda4ae2edf91cc3ff.bindPopup(popup_06c057f47a7a1ba3322b6ab26d1dff3d)
+        ;
+
+        
+    
+    
+            var marker_a24fd324f6c9c754f97f358a44a953cf = L.marker(
+                [48.55, 24.47],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_0387ed5018ea95720b4a16e3f5e7d954 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a24fd324f6c9c754f97f358a44a953cf.setIcon(icon_0387ed5018ea95720b4a16e3f5e7d954);
+        
+    
+        var popup_b59140637725336876929300c8d070bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f844c19a6288dc04dbf467b2000c6c2 = $(`<div id="html_1f844c19a6288dc04dbf467b2000c6c2" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_b59140637725336876929300c8d070bf.setContent(html_1f844c19a6288dc04dbf467b2000c6c2);
+            
+        
+
+        marker_a24fd324f6c9c754f97f358a44a953cf.bindPopup(popup_b59140637725336876929300c8d070bf)
+        ;
+
+        
+    
+    
+            var marker_79fb418ecd46f3ed47aa008c7fe3086c = L.marker(
+                [48.012, 23.762],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_e96ed7c9c17fa657673f5959b2dcfe0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_79fb418ecd46f3ed47aa008c7fe3086c.setIcon(icon_e96ed7c9c17fa657673f5959b2dcfe0a);
+        
+    
+        var popup_7ed1ad9e677750aedef426b74a45ce84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_382bb5c407d27bd8b2f2f9dd0c10e94a = $(`<div id="html_382bb5c407d27bd8b2f2f9dd0c10e94a" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_7ed1ad9e677750aedef426b74a45ce84.setContent(html_382bb5c407d27bd8b2f2f9dd0c10e94a);
+            
+        
+
+        marker_79fb418ecd46f3ed47aa008c7fe3086c.bindPopup(popup_7ed1ad9e677750aedef426b74a45ce84)
+        ;
+
+        
+    
+    
+            var marker_813dffbaedf61ae89451b74283de1c93 = L.marker(
+                [48.11, 22.94],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_b74a1c344ee48d7988ece886be32b5a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_813dffbaedf61ae89451b74283de1c93.setIcon(icon_b74a1c344ee48d7988ece886be32b5a4);
+        
+    
+        var popup_cbf69b9037c2b2cd4af492bee65a5d64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d72d91d242e18f5553140cdfa41af0f1 = $(`<div id="html_d72d91d242e18f5553140cdfa41af0f1" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_cbf69b9037c2b2cd4af492bee65a5d64.setContent(html_d72d91d242e18f5553140cdfa41af0f1);
+            
+        
+
+        marker_813dffbaedf61ae89451b74283de1c93.bindPopup(popup_cbf69b9037c2b2cd4af492bee65a5d64)
+        ;
+
+        
+    
+    
+            var marker_45b4a7bcd0f2767922cf9e659cbb7b76 = L.marker(
+                [48.74, 24.53],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_b7ddf46a4ef66a27bf33723dc14b6dfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_45b4a7bcd0f2767922cf9e659cbb7b76.setIcon(icon_b7ddf46a4ef66a27bf33723dc14b6dfa);
+        
+    
+        var popup_5c64dbcab71ac08854f361e16f13abe2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30875a683257064b1296e81dbc43132b = $(`<div id="html_30875a683257064b1296e81dbc43132b" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_5c64dbcab71ac08854f361e16f13abe2.setContent(html_30875a683257064b1296e81dbc43132b);
+            
+        
+
+        marker_45b4a7bcd0f2767922cf9e659cbb7b76.bindPopup(popup_5c64dbcab71ac08854f361e16f13abe2)
+        ;
+
+        
+    
+    
+            var marker_c528c2b6f47f95d3d48922ba400eeef9 = L.marker(
+                [48.15, 22.6],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_9bf31c134f1becb21c7415921b0dc5d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c528c2b6f47f95d3d48922ba400eeef9.setIcon(icon_9bf31c134f1becb21c7415921b0dc5d9);
+        
+    
+        var popup_2b020ce27c34f99b1403ed6be7fef6ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e60c944b98b6f379568ad846f9ca749a = $(`<div id="html_e60c944b98b6f379568ad846f9ca749a" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_2b020ce27c34f99b1403ed6be7fef6ea.setContent(html_e60c944b98b6f379568ad846f9ca749a);
+            
+        
+
+        marker_c528c2b6f47f95d3d48922ba400eeef9.bindPopup(popup_2b020ce27c34f99b1403ed6be7fef6ea)
+        ;
+
+        
+    
+    
+            var marker_290bc232b74d84337a1ed947f4be5097 = L.marker(
+                [48.73, 24.43],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_9ae100c079c10c50c868a2845abcaf6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_290bc232b74d84337a1ed947f4be5097.setIcon(icon_9ae100c079c10c50c868a2845abcaf6d);
+        
+    
+        var popup_d7c94418384785e858eea152384d9dc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6435ef3d77397da628f58e931f694a2 = $(`<div id="html_e6435ef3d77397da628f58e931f694a2" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_d7c94418384785e858eea152384d9dc7.setContent(html_e6435ef3d77397da628f58e931f694a2);
+            
+        
+
+        marker_290bc232b74d84337a1ed947f4be5097.bindPopup(popup_d7c94418384785e858eea152384d9dc7)
+        ;
+
+        
+    
+    
+            var marker_97d05c48cf8e849138a9d7df11db1600 = L.marker(
+                [48.46, 22.79],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_367957f6e8adb6abf21b06ddd1cc16dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_97d05c48cf8e849138a9d7df11db1600.setIcon(icon_367957f6e8adb6abf21b06ddd1cc16dd);
+        
+    
+        var popup_f2382661844803134a5c1633b166ff73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9188823b1613da4b6b718d8365614745 = $(`<div id="html_9188823b1613da4b6b718d8365614745" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_f2382661844803134a5c1633b166ff73.setContent(html_9188823b1613da4b6b718d8365614745);
+            
+        
+
+        marker_97d05c48cf8e849138a9d7df11db1600.bindPopup(popup_f2382661844803134a5c1633b166ff73)
+        ;
+
+        
+    
+    
+            var marker_ec633354a0bd096f45cabba3eb9f6b6b = L.marker(
+                [48.589, 23.061],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_142dd30d73e460190728d299a2c76463 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ec633354a0bd096f45cabba3eb9f6b6b.setIcon(icon_142dd30d73e460190728d299a2c76463);
+        
+    
+        var popup_ae83a19452b5e86a88a98fef8c17573b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68eb56a204c8c771881eb31b3942d0d9 = $(`<div id="html_68eb56a204c8c771881eb31b3942d0d9" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_ae83a19452b5e86a88a98fef8c17573b.setContent(html_68eb56a204c8c771881eb31b3942d0d9);
+            
+        
+
+        marker_ec633354a0bd096f45cabba3eb9f6b6b.bindPopup(popup_ae83a19452b5e86a88a98fef8c17573b)
+        ;
+
+        
+    
+    
+            var marker_282035555146ccf511af63d2976dddf3 = L.marker(
+                [48.55, 24.48],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_318b15642c80ec6a1cc4ce3cf28e5098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_282035555146ccf511af63d2976dddf3.setIcon(icon_318b15642c80ec6a1cc4ce3cf28e5098);
+        
+    
+        var popup_00065e23cfed5480b48a5a4f750deec2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3ffafe27bb0335271929fa0b212f396 = $(`<div id="html_b3ffafe27bb0335271929fa0b212f396" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_00065e23cfed5480b48a5a4f750deec2.setContent(html_b3ffafe27bb0335271929fa0b212f396);
+            
+        
+
+        marker_282035555146ccf511af63d2976dddf3.bindPopup(popup_00065e23cfed5480b48a5a4f750deec2)
+        ;
+
+        
+    
+    
+            var marker_c9a6808928b0731026d28dc56393c760 = L.marker(
+                [48.756, 22.426],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_dd587d692bf6fd174aaf38d967971e42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c9a6808928b0731026d28dc56393c760.setIcon(icon_dd587d692bf6fd174aaf38d967971e42);
+        
+    
+        var popup_15d3e3497e0379a38293b5f097325d74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fc18b60aa2ec1a3d99ee47a120ddd73 = $(`<div id="html_5fc18b60aa2ec1a3d99ee47a120ddd73" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_15d3e3497e0379a38293b5f097325d74.setContent(html_5fc18b60aa2ec1a3d99ee47a120ddd73);
+            
+        
+
+        marker_c9a6808928b0731026d28dc56393c760.bindPopup(popup_15d3e3497e0379a38293b5f097325d74)
+        ;
+
+        
+    
+    
+            var marker_1f1bb5f16da5fa4886bff9c09b25ef85 = L.marker(
+                [48.31, 22.84],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_3ad49f3a2cb02dacc9e719c69a915696 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1f1bb5f16da5fa4886bff9c09b25ef85.setIcon(icon_3ad49f3a2cb02dacc9e719c69a915696);
+        
+    
+        var popup_2ec389dc8316728382df645143d8a8a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2741e198ba4dc38af299c338bf0a4814 = $(`<div id="html_2741e198ba4dc38af299c338bf0a4814" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_2ec389dc8316728382df645143d8a8a9.setContent(html_2741e198ba4dc38af299c338bf0a4814);
+            
+        
+
+        marker_1f1bb5f16da5fa4886bff9c09b25ef85.bindPopup(popup_2ec389dc8316728382df645143d8a8a9)
+        ;
+
+        
+    
+    
+            var marker_b37b2a9abf1b5487dd65bf5d637488f4 = L.marker(
+                [48.58, 24.51],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_6f0ac526b3cbaa2e6610b54b19011654 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b37b2a9abf1b5487dd65bf5d637488f4.setIcon(icon_6f0ac526b3cbaa2e6610b54b19011654);
+        
+    
+        var popup_8dfa1c9a7f8945a0e2d790d27186a1aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_485a496cfe002a330c33717cbd1a408a = $(`<div id="html_485a496cfe002a330c33717cbd1a408a" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_8dfa1c9a7f8945a0e2d790d27186a1aa.setContent(html_485a496cfe002a330c33717cbd1a408a);
+            
+        
+
+        marker_b37b2a9abf1b5487dd65bf5d637488f4.bindPopup(popup_8dfa1c9a7f8945a0e2d790d27186a1aa)
+        ;
+
+        
+    
+    
+            var marker_509e212dfdd37b4a1e1b4204fa22c500 = L.marker(
+                [48.55, 27.34],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_392be60de6164f52facf73d2cb56f43c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_509e212dfdd37b4a1e1b4204fa22c500.setIcon(icon_392be60de6164f52facf73d2cb56f43c);
+        
+    
+        var popup_822e0d7c31d7dab0d078f7ebe7a9200f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f247eb55a76892862f371103e130c1c = $(`<div id="html_4f247eb55a76892862f371103e130c1c" style="width: 100.0%; height: 100.0%;">Chernivtsi</div>`)[0];
+                popup_822e0d7c31d7dab0d078f7ebe7a9200f.setContent(html_4f247eb55a76892862f371103e130c1c);
+            
+        
+
+        marker_509e212dfdd37b4a1e1b4204fa22c500.bindPopup(popup_822e0d7c31d7dab0d078f7ebe7a9200f)
+        ;
+
+        
+    
+    
+            var marker_bf8d50e10022abd4e60402f62534152b = L.marker(
+                [48.66, 27.4],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_34c124201cfce31e44ed8bf0a30f25a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bf8d50e10022abd4e60402f62534152b.setIcon(icon_34c124201cfce31e44ed8bf0a30f25a6);
+        
+    
+        var popup_237f14d5e93bac5c3a2aca0332f25234 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10a535fa4962a528d6f6c5bfcf107a04 = $(`<div id="html_10a535fa4962a528d6f6c5bfcf107a04" style="width: 100.0%; height: 100.0%;">Chernivtsi</div>`)[0];
+                popup_237f14d5e93bac5c3a2aca0332f25234.setContent(html_10a535fa4962a528d6f6c5bfcf107a04);
+            
+        
+
+        marker_bf8d50e10022abd4e60402f62534152b.bindPopup(popup_237f14d5e93bac5c3a2aca0332f25234)
+        ;
+
+        
+    
+    
+            var marker_51cb8abf19778a62edea830d154041fc = L.marker(
+                [48.56, 24.48],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_0e3aa04d5b78f445a352c37977d98521 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_51cb8abf19778a62edea830d154041fc.setIcon(icon_0e3aa04d5b78f445a352c37977d98521);
+        
+    
+        var popup_848dcc104c72db1b84f89a3a0e8269c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5a59504e4699e79a36cd372c4e54565 = $(`<div id="html_b5a59504e4699e79a36cd372c4e54565" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_848dcc104c72db1b84f89a3a0e8269c0.setContent(html_b5a59504e4699e79a36cd372c4e54565);
+            
+        
+
+        marker_51cb8abf19778a62edea830d154041fc.bindPopup(popup_848dcc104c72db1b84f89a3a0e8269c0)
+        ;
+
+        
+    
+    
+            var marker_0de28e9b16590395347b71d73e54d6b0 = L.marker(
+                [48.4, 22.84],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_c759aab747d544eb72e4e897bdac6213 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0de28e9b16590395347b71d73e54d6b0.setIcon(icon_c759aab747d544eb72e4e897bdac6213);
+        
+    
+        var popup_6576938d94dec5f50fc99417f1d5fc73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bb777ae63a2cea93202fdff06b8e804 = $(`<div id="html_4bb777ae63a2cea93202fdff06b8e804" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_6576938d94dec5f50fc99417f1d5fc73.setContent(html_4bb777ae63a2cea93202fdff06b8e804);
+            
+        
+
+        marker_0de28e9b16590395347b71d73e54d6b0.bindPopup(popup_6576938d94dec5f50fc99417f1d5fc73)
+        ;
+
+        
+    
+    
+            var marker_35644ea1cdec8fe7982f18f4f9c415a6 = L.marker(
+                [48.143, 23.243],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_e13c88f1bcfeef1f33dfddd9483dc431 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_35644ea1cdec8fe7982f18f4f9c415a6.setIcon(icon_e13c88f1bcfeef1f33dfddd9483dc431);
+        
+    
+        var popup_8c633e6dd1f6127e7b9a8b071b361295 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df57299883f9e32dbc869738b10943cb = $(`<div id="html_df57299883f9e32dbc869738b10943cb" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_8c633e6dd1f6127e7b9a8b071b361295.setContent(html_df57299883f9e32dbc869738b10943cb);
+            
+        
+
+        marker_35644ea1cdec8fe7982f18f4f9c415a6.bindPopup(popup_8c633e6dd1f6127e7b9a8b071b361295)
+        ;
+
+        
+    
+    
+            var marker_bea0e39086237b4258380b094ab73c87 = L.marker(
+                [49.4835, 22.9813],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_9329a94f3bf539caf27994fc91326105 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bea0e39086237b4258380b094ab73c87.setIcon(icon_9329a94f3bf539caf27994fc91326105);
+        
+    
+        var popup_fa04e5d38427d712d5b2f824b919479a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56193ebeb2110e4cdca334386d381a18 = $(`<div id="html_56193ebeb2110e4cdca334386d381a18" style="width: 100.0%; height: 100.0%;">Lviv</div>`)[0];
+                popup_fa04e5d38427d712d5b2f824b919479a.setContent(html_56193ebeb2110e4cdca334386d381a18);
+            
+        
+
+        marker_bea0e39086237b4258380b094ab73c87.bindPopup(popup_fa04e5d38427d712d5b2f824b919479a)
+        ;
+
+        
+    
+    
+            var marker_8e95bb8cf507e19c89f5425dee5efcc4 = L.marker(
+                [48.412, 22.777],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_acba7b08db44205ef908ad2d42c7f524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8e95bb8cf507e19c89f5425dee5efcc4.setIcon(icon_acba7b08db44205ef908ad2d42c7f524);
+        
+    
+        var popup_894562dbe664741881b6e9ac88d5c35e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d01fc77c39478ec3f74f156af9fa67d = $(`<div id="html_0d01fc77c39478ec3f74f156af9fa67d" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_894562dbe664741881b6e9ac88d5c35e.setContent(html_0d01fc77c39478ec3f74f156af9fa67d);
+            
+        
+
+        marker_8e95bb8cf507e19c89f5425dee5efcc4.bindPopup(popup_894562dbe664741881b6e9ac88d5c35e)
+        ;
+
+        
+    
+    
+            var marker_be9e59142600a663eb93102f2aca8d5c = L.marker(
+                [48.227, 156.497],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_2133a3e2287b51eff3e9bab74f9a9dff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_be9e59142600a663eb93102f2aca8d5c.setIcon(icon_2133a3e2287b51eff3e9bab74f9a9dff);
+        
+    
+        var popup_22f23cf896d07ec8259ca33d02cd166c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09fab753e6e05f923dcd8c3d6dc4c20b = $(`<div id="html_09fab753e6e05f923dcd8c3d6dc4c20b" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_22f23cf896d07ec8259ca33d02cd166c.setContent(html_09fab753e6e05f923dcd8c3d6dc4c20b);
+            
+        
+
+        marker_be9e59142600a663eb93102f2aca8d5c.bindPopup(popup_22f23cf896d07ec8259ca33d02cd166c)
+        ;
+
+        
+    
+    
+            var marker_9e90845a1b2776fa76dee27e6a476d62 = L.marker(
+                [48.101, 23.087],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_ac21bd3ccfe36186c226aac39d644411 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9e90845a1b2776fa76dee27e6a476d62.setIcon(icon_ac21bd3ccfe36186c226aac39d644411);
+        
+    
+        var popup_7b2440a2610f2d7f7d8c5fd2a116c979 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f598c6f88405e2f4539376b7796032f = $(`<div id="html_5f598c6f88405e2f4539376b7796032f" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_7b2440a2610f2d7f7d8c5fd2a116c979.setContent(html_5f598c6f88405e2f4539376b7796032f);
+            
+        
+
+        marker_9e90845a1b2776fa76dee27e6a476d62.bindPopup(popup_7b2440a2610f2d7f7d8c5fd2a116c979)
+        ;
+
+        
+    
+    
+            var marker_d69faeb2c10030b1589ac3f7d48c76ac = L.marker(
+                [48.549, 22.914],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_a16d0a413c80869c0c387504704b24a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d69faeb2c10030b1589ac3f7d48c76ac.setIcon(icon_a16d0a413c80869c0c387504704b24a5);
+        
+    
+        var popup_53277e84c5c7c508d89bc2ffb04e9272 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e61164bf7cb3f12a6457dfe54c34a8ed = $(`<div id="html_e61164bf7cb3f12a6457dfe54c34a8ed" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_53277e84c5c7c508d89bc2ffb04e9272.setContent(html_e61164bf7cb3f12a6457dfe54c34a8ed);
+            
+        
+
+        marker_d69faeb2c10030b1589ac3f7d48c76ac.bindPopup(popup_53277e84c5c7c508d89bc2ffb04e9272)
+        ;
+
+        
+    
+    
+            var marker_d647811dd4bfddbd6a38c66e84a76afe = L.marker(
+                [49.05, 23.99],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_84c0ad04899f10fbc35c11113c88ec3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d647811dd4bfddbd6a38c66e84a76afe.setIcon(icon_84c0ad04899f10fbc35c11113c88ec3d);
+        
+    
+        var popup_71dfc71c5ca00ecf5228464184d80eed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bda14699fb6dadb861bc6e1e91ae15b = $(`<div id="html_0bda14699fb6dadb861bc6e1e91ae15b" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_71dfc71c5ca00ecf5228464184d80eed.setContent(html_0bda14699fb6dadb861bc6e1e91ae15b);
+            
+        
+
+        marker_d647811dd4bfddbd6a38c66e84a76afe.bindPopup(popup_71dfc71c5ca00ecf5228464184d80eed)
+        ;
+
+        
+    
+    
+            var marker_0365efd3e2c9f7ddc4360a5fd44fe3d3 = L.marker(
+                [49.06, 23.97],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_41f499cea3fe40fd3a8c948106907f23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0365efd3e2c9f7ddc4360a5fd44fe3d3.setIcon(icon_41f499cea3fe40fd3a8c948106907f23);
+        
+    
+        var popup_b90a88756fb71892770204dc05f939d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef742a34ca0eff84b7c2a8e3fca3bf89 = $(`<div id="html_ef742a34ca0eff84b7c2a8e3fca3bf89" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_b90a88756fb71892770204dc05f939d5.setContent(html_ef742a34ca0eff84b7c2a8e3fca3bf89);
+            
+        
+
+        marker_0365efd3e2c9f7ddc4360a5fd44fe3d3.bindPopup(popup_b90a88756fb71892770204dc05f939d5)
+        ;
+
+        
+    
+    
+            var marker_dab9cfcbcebd0d747a3f2ada980ed996 = L.marker(
+                [48.53, 22.38],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_bfaacb634f2332ddbb354365d04615b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dab9cfcbcebd0d747a3f2ada980ed996.setIcon(icon_bfaacb634f2332ddbb354365d04615b5);
+        
+    
+        var popup_6f621deec12e9a847d2df8e4c96875c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10976a6988fc54ce10dd64dd21123ef3 = $(`<div id="html_10976a6988fc54ce10dd64dd21123ef3" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_6f621deec12e9a847d2df8e4c96875c0.setContent(html_10976a6988fc54ce10dd64dd21123ef3);
+            
+        
+
+        marker_dab9cfcbcebd0d747a3f2ada980ed996.bindPopup(popup_6f621deec12e9a847d2df8e4c96875c0)
+        ;
+
+        
+    
+    
+            var marker_cc283eef2a6b9018fa363a34863346fd = L.marker(
+                [48.57, 22.38],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_99ed8773ce687436f97b6de2a1d6c3b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cc283eef2a6b9018fa363a34863346fd.setIcon(icon_99ed8773ce687436f97b6de2a1d6c3b0);
+        
+    
+        var popup_afe8c32a80806bd6e073f06181bd3ca3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_516d5e8ed6483d6e3481c7b4e6de47a3 = $(`<div id="html_516d5e8ed6483d6e3481c7b4e6de47a3" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_afe8c32a80806bd6e073f06181bd3ca3.setContent(html_516d5e8ed6483d6e3481c7b4e6de47a3);
+            
+        
+
+        marker_cc283eef2a6b9018fa363a34863346fd.bindPopup(popup_afe8c32a80806bd6e073f06181bd3ca3)
+        ;
+
+        
+    
+    
+            var marker_4e51dbb8eb9bd7451f80cd804f9025c6 = L.marker(
+                [48.13, 22.88],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_17f42f832524286536486807e6f837cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4e51dbb8eb9bd7451f80cd804f9025c6.setIcon(icon_17f42f832524286536486807e6f837cf);
+        
+    
+        var popup_13cdf89136a444757a8cfda537b1cea7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce2f0e770590dbb7f7aee55f6e873d34 = $(`<div id="html_ce2f0e770590dbb7f7aee55f6e873d34" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_13cdf89136a444757a8cfda537b1cea7.setContent(html_ce2f0e770590dbb7f7aee55f6e873d34);
+            
+        
+
+        marker_4e51dbb8eb9bd7451f80cd804f9025c6.bindPopup(popup_13cdf89136a444757a8cfda537b1cea7)
+        ;
+
+        
+    
+    
+            var marker_b7d38f31d9abb86fe0e86dd0308a3abf = L.marker(
+                [48.474, 22.774],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_cfc4e113e61496350c965cb8b2c6b63d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b7d38f31d9abb86fe0e86dd0308a3abf.setIcon(icon_cfc4e113e61496350c965cb8b2c6b63d);
+        
+    
+        var popup_992992b402f4fc6ff38d618f7e29926e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c96ca1abf391dbab54d5dda8087eaed3 = $(`<div id="html_c96ca1abf391dbab54d5dda8087eaed3" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_992992b402f4fc6ff38d618f7e29926e.setContent(html_c96ca1abf391dbab54d5dda8087eaed3);
+            
+        
+
+        marker_b7d38f31d9abb86fe0e86dd0308a3abf.bindPopup(popup_992992b402f4fc6ff38d618f7e29926e)
+        ;
+
+        
+    
+    
+            var marker_9811af114a2b5bee41b8353cad3e4c0b = L.marker(
+                [48.58, 22.909],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_aa948f047ff4844f4cfe66ca4b8ee7b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9811af114a2b5bee41b8353cad3e4c0b.setIcon(icon_aa948f047ff4844f4cfe66ca4b8ee7b3);
+        
+    
+        var popup_769a8b9245ec8870babd59d72d351746 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed04189cf9443b2bfa12f07b2991a3fe = $(`<div id="html_ed04189cf9443b2bfa12f07b2991a3fe" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_769a8b9245ec8870babd59d72d351746.setContent(html_ed04189cf9443b2bfa12f07b2991a3fe);
+            
+        
+
+        marker_9811af114a2b5bee41b8353cad3e4c0b.bindPopup(popup_769a8b9245ec8870babd59d72d351746)
+        ;
+
+        
+    
+    
+            var marker_74d233689e737ff7c97c95d4e2258906 = L.marker(
+                [48.5, 24.51],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_d86017d3c232ffedd483d9aa4343f204 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_74d233689e737ff7c97c95d4e2258906.setIcon(icon_d86017d3c232ffedd483d9aa4343f204);
+        
+    
+        var popup_91d9c99baf1b8b00f09f13e664ae8275 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f94662e97ba0845a409a58913ffdd8ef = $(`<div id="html_f94662e97ba0845a409a58913ffdd8ef" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_91d9c99baf1b8b00f09f13e664ae8275.setContent(html_f94662e97ba0845a409a58913ffdd8ef);
+            
+        
+
+        marker_74d233689e737ff7c97c95d4e2258906.bindPopup(popup_91d9c99baf1b8b00f09f13e664ae8275)
+        ;
+
+        
+    
+    
+            var marker_4faa6e8b462314efbe699e3b9e5e768e = L.marker(
+                [48.29, 23.358],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_7e4521fc79ce7e668f06d97c46dae479 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4faa6e8b462314efbe699e3b9e5e768e.setIcon(icon_7e4521fc79ce7e668f06d97c46dae479);
+        
+    
+        var popup_72a6e54d2be4aecc67a5e4f9285aeb37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11d5806e7fdc4bd9f05655b9e0785140 = $(`<div id="html_11d5806e7fdc4bd9f05655b9e0785140" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_72a6e54d2be4aecc67a5e4f9285aeb37.setContent(html_11d5806e7fdc4bd9f05655b9e0785140);
+            
+        
+
+        marker_4faa6e8b462314efbe699e3b9e5e768e.bindPopup(popup_72a6e54d2be4aecc67a5e4f9285aeb37)
+        ;
+
+        
+    
+    
+            var marker_13e6502a50d9bf1bc1ee280d00ea2615 = L.marker(
+                [48.316, 23.184],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_8975a9f2a17f6901a67a82eba50dce01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_13e6502a50d9bf1bc1ee280d00ea2615.setIcon(icon_8975a9f2a17f6901a67a82eba50dce01);
+        
+    
+        var popup_062673746b7ac2500b223cd31704d139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8136595bc1794d2e77e3ebc6704d9902 = $(`<div id="html_8136595bc1794d2e77e3ebc6704d9902" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_062673746b7ac2500b223cd31704d139.setContent(html_8136595bc1794d2e77e3ebc6704d9902);
+            
+        
+
+        marker_13e6502a50d9bf1bc1ee280d00ea2615.bindPopup(popup_062673746b7ac2500b223cd31704d139)
+        ;
+
+        
+    
+    
+            var marker_9bfe697c490c5d6283a6a90958825e79 = L.marker(
+                [48.41, 22.72],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_d09b3f3fcb84ffa39e03a97be696c6ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9bfe697c490c5d6283a6a90958825e79.setIcon(icon_d09b3f3fcb84ffa39e03a97be696c6ed);
+        
+    
+        var popup_a93173f9ef5d9db2d88f488475dbcb2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_428e77dbd62a1fc449fe32291d1840ca = $(`<div id="html_428e77dbd62a1fc449fe32291d1840ca" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_a93173f9ef5d9db2d88f488475dbcb2b.setContent(html_428e77dbd62a1fc449fe32291d1840ca);
+            
+        
+
+        marker_9bfe697c490c5d6283a6a90958825e79.bindPopup(popup_a93173f9ef5d9db2d88f488475dbcb2b)
+        ;
+
+        
+    
+    
+            var marker_15c070a04080389fcd768abc27cc4e9a = L.marker(
+                [48.59, 24.44],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_55081bf6c8b21517b15a568979514d39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_15c070a04080389fcd768abc27cc4e9a.setIcon(icon_55081bf6c8b21517b15a568979514d39);
+        
+    
+        var popup_0c4439b15e48309ac3db02d9b5ce3f10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab4b27e8766c735c49a6730454340c83 = $(`<div id="html_ab4b27e8766c735c49a6730454340c83" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_0c4439b15e48309ac3db02d9b5ce3f10.setContent(html_ab4b27e8766c735c49a6730454340c83);
+            
+        
+
+        marker_15c070a04080389fcd768abc27cc4e9a.bindPopup(popup_0c4439b15e48309ac3db02d9b5ce3f10)
+        ;
+
+        
+    
+    
+            var marker_9ada17d83671561af3111dd6106f5410 = L.marker(
+                [48.387, 22.474],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_ab7e692a6b1c83a11f3ea269cc4f1c5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9ada17d83671561af3111dd6106f5410.setIcon(icon_ab7e692a6b1c83a11f3ea269cc4f1c5d);
+        
+    
+        var popup_b3ddfbd6840b8735eb6070a63c1fb6cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_295139b319672c5fff359f6e41d882ab = $(`<div id="html_295139b319672c5fff359f6e41d882ab" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_b3ddfbd6840b8735eb6070a63c1fb6cd.setContent(html_295139b319672c5fff359f6e41d882ab);
+            
+        
+
+        marker_9ada17d83671561af3111dd6106f5410.bindPopup(popup_b3ddfbd6840b8735eb6070a63c1fb6cd)
+        ;
+
+        
+    
+    
+            var marker_329bfe4d1ce2c9d3de3991ea6eb90266 = L.marker(
+                [48.329, 23.282],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_ff36fa6ae99abe393614911012848497 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_329bfe4d1ce2c9d3de3991ea6eb90266.setIcon(icon_ff36fa6ae99abe393614911012848497);
+        
+    
+        var popup_f74d84b2a0daf02ae4980df7cb436bbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec78e0cec2f2c50c01c18f629006e41a = $(`<div id="html_ec78e0cec2f2c50c01c18f629006e41a" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_f74d84b2a0daf02ae4980df7cb436bbe.setContent(html_ec78e0cec2f2c50c01c18f629006e41a);
+            
+        
+
+        marker_329bfe4d1ce2c9d3de3991ea6eb90266.bindPopup(popup_f74d84b2a0daf02ae4980df7cb436bbe)
+        ;
+
+        
+    
+    
+            var marker_8d5d4a5672b58636da4438e8780abbb5 = L.marker(
+                [48.28, 23.23],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_e8271ff4b047bad763fac4a795f1d0b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8d5d4a5672b58636da4438e8780abbb5.setIcon(icon_e8271ff4b047bad763fac4a795f1d0b9);
+        
+    
+        var popup_a47d716b2f6ad203b3c5af761e7b43bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d035a3930182848b04fdd68589881ef = $(`<div id="html_2d035a3930182848b04fdd68589881ef" style="width: 100.0%; height: 100.0%;">Transcarpatia</div>`)[0];
+                popup_a47d716b2f6ad203b3c5af761e7b43bf.setContent(html_2d035a3930182848b04fdd68589881ef);
+            
+        
+
+        marker_8d5d4a5672b58636da4438e8780abbb5.bindPopup(popup_a47d716b2f6ad203b3c5af761e7b43bf)
+        ;
+
+        
+    
+    
+            var marker_c832936b0b4a66b724203f032051a85a = L.marker(
+                [48.54, 24.44],
+                {}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var icon_f3d64df32ea172df3abc49d6a6ad332d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c832936b0b4a66b724203f032051a85a.setIcon(icon_f3d64df32ea172df3abc49d6a6ad332d);
+        
+    
+        var popup_39561223d8dd75dc46a74c7d6ef7057c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bc46912f42160a6488a5c3e11ab1603 = $(`<div id="html_5bc46912f42160a6488a5c3e11ab1603" style="width: 100.0%; height: 100.0%;">Ivano-Frankivsk</div>`)[0];
+                popup_39561223d8dd75dc46a74c7d6ef7057c.setContent(html_5bc46912f42160a6488a5c3e11ab1603);
+            
+        
+
+        marker_c832936b0b4a66b724203f032051a85a.bindPopup(popup_39561223d8dd75dc46a74c7d6ef7057c)
+        ;
+
+        
+    
+    
+            var tile_layer_74ed426346234afdf10fecb6a1e45ad4 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var tile_layer_1e3812d19cbc20ef35b172c84c8bfc0f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var tile_layer_b63f2ad17ae1727b96de5982db879217 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var tile_layer_d41e77dd9c0f0627cdb09aa86a086f2c = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var tile_layer_a1c90a8adf9adac6d7f44e908f72da15 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+        
+    
+            var layer_control_18dc77d169d21d5a16c58404f9e78b30 = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_74ed426346234afdf10fecb6a1e45ad4,
+                    "openstreetmap" : tile_layer_1e3812d19cbc20ef35b172c84c8bfc0f,
+                    "stamentoner" : tile_layer_d41e77dd9c0f0627cdb09aa86a086f2c,
+                    "cartodbdark_matter" : tile_layer_a1c90a8adf9adac6d7f44e908f72da15,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_18dc77d169d21d5a16c58404f9e78b30.base_layers,
+                layer_control_18dc77d169d21d5a16c58404f9e78b30.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_9933869c564c7ccf59b134a683b6e1be);
+            tile_layer_1e3812d19cbc20ef35b172c84c8bfc0f.remove();
+            tile_layer_d41e77dd9c0f0627cdb09aa86a086f2c.remove();
+            tile_layer_a1c90a8adf9adac6d7f44e908f72da15.remove();
+        
+    
+                var lat_lng_popup_52b4320407a562f78a88a953396c9dc7 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_52b4320407a562f78a88a953396c9dc7
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_9933869c564c7ccf59b134a683b6e1be);
+                    }
+                map_9933869c564c7ccf59b134a683b6e1be.on('click', latLngPop);
+            
+</script>
+</html>
